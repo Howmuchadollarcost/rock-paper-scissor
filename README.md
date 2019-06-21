@@ -1,2 +1,2 @@
 # rock-paper-scissor
-Easy JS game
+Made in JS
