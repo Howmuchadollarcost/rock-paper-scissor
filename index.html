@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>RPS</title>
+</head>
+<body>
+    <header class="center">
+        <h1>Rock|Paper|Scissor</h1>
+    </header>
+    
+    <main class="center">
+        <button class="btn" type="submit">Restart &#x1F501;</button>
+        <section id="choices">
+            <div class="choice slideInLeft" id="rock">rock</div>
+            <div class="choice" id="paper">paper</div>
+            <div class="choice" id="scissor">scissor</div>
+        </section>
+
+        <section id="score">
+            <div id="player">
+                <p>Player : 0</p>
+            </div>
+            <div id="ties">
+                <p>Ties : 0</p>
+            </div>
+            <div id="computer">
+                <p>Computer : 0</p>
+            </div>
+        </section>
+    </main>
+
+
+    <div id="modal">
+        <p id="resultComp"></p>
+        <h1 id="win"></h1>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

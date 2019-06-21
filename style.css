@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0.5rem;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    animation: slideInLeft 2s ease both;
+}
+
+#choices {
+    margin: 1em 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+}
+
+.choice {
+    padding: 1em;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#score {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#win {
+    animation: slideInOn 1s ease both;
+}
+
+.btn {
+    animation: slideInOn 1s ease both;
+}
+
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes slideInOn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 1em;
+        margin: 3em 0;
+    }
+}
